@@ -1,0 +1,383 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: rgb(239, 235, 235);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('./math-U5mHl-uACe0-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+     
+}
+
+/* Header Section */
+#header {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10%;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.prg
+{
+    color: #04be30;
+}
+
+.name {
+    color:#04be30;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section Styling */
+#about {
+    height: 100vh; /* Make About section take up full page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Arrange image and text side by side */
+    color: white;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 7%;
+}
+
+.about-image {
+    width:500px ; 
+    height:500px;
+    border-radius: 8px;
+    
+}
+.about-text>h2{
+    color: #04be30;
+
+}
+.about-text {
+    flex: 1;
+    font-size:20px;
+    padding-left: 9%;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 150px;
+    
+}
+
+.about-buttons {
+    margin-top: 20px;
+}
+.color
+{
+    color: #2cef05;
+}
+.about-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-right: 20px;
+    transition: background-color 0.3s;
+}
+
+.about-btn:hover {
+    background-color: #45a049;
+}
+
+.content-section {
+    display: none;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+/* Projects Section Styling */
+#projects {
+    padding: 50px;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    color: white;
+    text-align: center;
+}
+
+.projects-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #4CAF50;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: rgb(8, 236, 95);
+}
+
+.project-item p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: none;
+    color: white;
+}
+/* Contact Section Styling */
+#contact {
+    padding: 50px;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    color: white;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #4CAF50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px #4CAF50;
+}
+
+#last{
+    width:10%;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#last:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    color: #ccc;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.social-links a {
+    font-size: 2rem;
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #4CAF50;
+    transform: scale(1.2);
+}
+
+/* Footer Section */
+#footer {
+    text-align: center;
+    padding: 20px;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    color: white;
+    font-size: 1rem;
+    position: relative; /* Use fixed for sticky footer */
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#footer p {
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    .header-text p {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    .social-links a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .header-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-text p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+    }
+}
