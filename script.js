@@ -41,3 +41,26 @@ form.addEventListener('submit', e => {
         console.error('Error!', error.message);
     });
 });
+// Hamburger menu toggle
+function toggleMenu() {
+    const navMenu = document.querySelector('nav ul');
+    navMenu.classList.toggle('show');
+}
+
+// Ensure the content sections behave correctly
+function showContent(content) {
+    // Hide all content sections
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // Show the selected content section
+    document.getElementById(content).style.display = 'block';
+
+    // Close the navigation menu if visible (for small screens)
+    const navMenu = document.querySelector('nav ul');
+    if (navMenu.classList.contains('show')) {
+        navMenu.classList.remove('show');
+    }
+}
